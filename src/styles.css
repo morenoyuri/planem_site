@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --third-color: #0a0303;
+    --secondary-color: #f2b636;
+    --fourth-color: white;
+    --first-color: #878c9b;
+    --secondary-color-transparent: rgba(242, 182, 54, .7);
+    --third-color-transparent: rgba(10, 3, 3, .6);
+}

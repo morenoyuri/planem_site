@@ -1,0 +1,164 @@
+#header {
+    background-image: url('../../../assets/plano-de-abertura-do-arquiteto-de-colheita.jpg');
+    height: 33vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-overlay {
+    position: absolute;
+    width: 100%;
+    height: 33vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, var(--secondary-color-transparent) 0%, var(--third-color-transparent) 100%);
+    z-index: 0;
+}
+
+#navigation {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    /* background-color: var(--third-color); */
+    z-index: 10;
+    background-color: transparent;
+}
+
+#logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 12vw;
+    height: auto;
+}
+
+#header ul {
+    display: flex;
+    width: 60vw;
+}
+
+#header ul>li {
+    margin: 1vh 2vw;
+    padding: 1vh 1vw;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#header ul>li>a {
+    text-decoration: none;
+    font-size: .6vw;
+    color: var(--fourth-color);
+    font-family: Carme, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .06vw;
+    line-height: 1vh;
+    text-transform: uppercase;
+    transition: 250ms ease-in-out;
+}
+
+#header h1 {
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: var(--fourth-color);
+    font-family: Carme, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .7vw;
+    text-transform: uppercase;
+    transition: 250ms ease-in-out;
+    margin-top: 8vh;
+    z-index: 10;
+}
+
+#header ul>li>a:hover {
+    color: var(--secondary-color);
+    transition: 200ms ease-in-out;
+}
+
+#header ul>li>a:hover:after {
+    transform: scaleX(1);
+}
+
+#header ul>li>a:after {
+    display: block;
+    margin-top: .4vh;
+    content: '';
+    border-bottom: solid 1px var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+#social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+}
+
+#social-media a {
+    margin: .4vw;
+    padding: 0;
+}
+
+#social-media img {
+    margin: 0;
+    padding: 0;
+    height: 2vw;
+}
+
+.info-item {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 2vw;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    font-size: .7vw;
+}
+
+.info-link {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    font-size: .7vw;
+    text-decoration: none;
+    color: var(--fourth-color);
+    margin-right: 5vw;
+    transition: 200ms ease-in-out;
+}
+
+.info-link:hover {
+    color: var(--first-color);
+}
+
+.info-item i {
+    color: var(--fourth-color);
+    margin-right: .1vw;
+}
+
+.page-top-bar {
+    display: flex;
+    justify-content: end;
+    padding: .8vw 0vw;
+    margin: 0 0;
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    z-index: 999999;
+    width: calc(100% - 40px);
+    transition: 200ms ease-in-out;
+}

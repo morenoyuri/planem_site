@@ -1,10 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.cdnfonts.com/css/carme');
 :root {
     --third-color: #0a0303;
     --secondary-color: #f2b636;
     --fourth-color: white;
-    --first-color: #878c9b;
+    --first-color: #61636b;
     --secondary-color-transparent: rgba(242, 182, 54, .7);
     --third-color-transparent: rgba(10, 3, 3, .6);
+}
+
+* {
+    font-family: Carme, Helvetica, Arial, sans-serif;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+}
+
+.card {
+    margin: 20px 0px;
+    padding: 20px 20px!important;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 16px;
 }
